@@ -5,10 +5,10 @@ spring:
 server:
   port: 8443
   ssl:
-    key-store: classpath:server-keystore.jks
+    key-store: /Users/cchrysostom/github.com/codependent/spring-boot-ssl-mutual-authentication/server-keystore.jks
     key-store-password: secret
     key-alias: secure-server
-    trust-store: classpath:server-truststore.jks
+    trust-store: /Users/cchrysostom/github.com/codependent/spring-boot-ssl-mutual-authentication/server-truststore.jks
     trust-store-password: secret
     enabled: true
     client-auth: need
