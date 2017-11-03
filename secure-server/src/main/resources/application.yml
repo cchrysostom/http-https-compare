@@ -12,7 +12,9 @@ server:
     trust-store-password: secret
     enabled: true
     client-auth: need
-    
+  http:
+    port: 8400
+
 logging:
   level:
     org.springframework.security: DEBUG

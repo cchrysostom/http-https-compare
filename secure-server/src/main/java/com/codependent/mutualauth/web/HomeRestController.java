@@ -12,5 +12,9 @@ public class HomeRestController {
 	public String home(Principal principal){
 		return String.format("Hello %s!", principal.getName());
 	}
-	
+
+	@GetMapping("/notlsmsg")
+	public String noTlsMsg() {
+		return "Hello World!";
+	}
 }
