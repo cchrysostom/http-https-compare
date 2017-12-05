@@ -31,8 +31,9 @@ import java.security.KeyStore;
 public class SecureClientApplication {
     static public final String TRUST_STORE_FILE = "/Users/cchrysostom/github.com/codependent/spring-boot-ssl-mutual-authentication/client-truststore.jks";
     static public final String KEYS_STORE_FILE = "/Users/cchrysostom/github.com/codependent/spring-boot-ssl-mutual-authentication/client-keystore.jks";
-    static public final int POOL_MAX = 500;
-    static public final int POOL_MAX_ROUTE = 500;
+    static public final int POOL_MAX = 100;
+    static public final int POOL_MAX_ROUTE = 100;
+
 	@PostConstruct
 	public void initSsl(){
 		System.setProperty("javax.net.ssl.keyStore", KEYS_STORE_FILE);
